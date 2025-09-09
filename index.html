@@ -38,8 +38,8 @@
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="/" class="text-gray-600 hover:text-blue-500 font-medium">Home</a></li>
-                    <li><a href="/About" class="text-gray-600 hover:text-blue-500 font-medium">About</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500 font-medium">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500 font-medium">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -212,14 +212,13 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href=/ class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href=/about class="text-gray-400 hover:text-white transition">About</a></li>
-                        <li><a href=/Privacy class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; Mini Tools by default :) </p>
+                <p>&copy; 2023 Mini Tools. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -675,6 +674,36 @@
             const notes = document.getElementById('notes-textarea').value;
             document.getElementById('char-count').textContent = `${notes.length} characters`;
         }
+
+        // URL Shortener Functions
+        function shortenUrl() {
+            const longUrl = document.getElementById('long-url').value;
+            
+            if (!longUrl) {
+                alert('Please enter a URL');
+                return;
+            }
+            
+            // Simple validation
+            try {
+                new URL(longUrl);
+            } catch (_) {
+                alert('Please enter a valid URL');
+                return;
+            }
+            
+            // Generate a simple short URL (in a real app, this would call an API)
+            const shortCode = Math.random().toString(36).substring(2, 8);
+            const shortUrl = `https://mini.tools/${shortCode}`;
+            
+            document.getElementById('short-url').value = shortUrl;
+            document.getElementById('result-container').classList.remove('hidden');
+        }
+
+        function copyShortUrl() {
+            const shortUrlField = document.getElementById('short-url');
+            shortUrlField.select();
+            document.execCommand('copy');
             
             // Show feedback
             const button = event.target;
