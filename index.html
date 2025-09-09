@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Tools - All Your Essential Tools in One Place</title>
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+    <title>Mini Outils - Tous vos outils essentiels au même endroit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,19 +26,19 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
+    <!-- En-tête -->
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <div class="bg-blue-500 text-white p-2 rounded-lg">
                     <i data-feather="tool" class="w-6 h-6"></i>
                 </div>
-                <h1 class="text-2xl font-bold text-gray-800">Mini Tools</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Mini Outils</h1>
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="mini-tools/index.html" class="text-gray-600 hover:text-blue-500 font-medium">Home</a></li>
-                    <li><a href="mini-tools/about.html" class="text-gray-600 hover:text-blue-500 font-medium">About</a></li>
+                    <li><a href="mini-tools/index.html" class="text-gray-600 hover:text-blue-500 font-medium">Accueil</a></li>
+                    <li><a href="mini-tools/about.html" class="text-gray-600 hover:text-blue-500 font-medium">À propos</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,13 +46,13 @@
 
     <main class="container mx-auto px-4 py-8">
         <div class="text-center mb-12" data-aos="fade-up">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">All Your Essential Tools in One Place</h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mini Tools provides a collection of useful utilities to make your daily tasks easier and more efficient.</p>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Tous vos outils essentiels au même endroit</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mini Outils propose une collection d'utilitaires pratiques pour faciliter et optimiser vos tâches quotidiennes.</p>
         </div>
 
-        <!-- Tools Grid -->
+        <!-- Grille d'outils -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- To-Do List Card -->
+            <!-- Carte Liste de tâches -->
             <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
                  onclick="showTool('todo')" 
                  data-aos="fade-up" 
@@ -63,17 +62,17 @@
                         <div class="bg-green-100 p-3 rounded-lg mr-4">
                             <i data-feather="check-circle" class="text-green-600 w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800">To-Do List</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Liste de tâches</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Organize your tasks and boost productivity with our simple to-do list manager.</p>
+                    <p class="text-gray-600 mb-4">Organisez vos tâches et augmentez votre productivité avec notre gestionnaire de liste simple.</p>
                     <button class="text-blue-500 font-medium flex items-center">
-                        Open Tool
+                        Ouvrir l'outil
                         <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Calculator Card -->
+            <!-- Carte Calculatrice -->
             <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
                  onclick="showTool('calculator')" 
                  data-aos="fade-up" 
@@ -83,17 +82,17 @@
                         <div class="bg-yellow-100 p-3 rounded-lg mr-4">
                             <i data-feather="cpu" class="text-yellow-600 w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800">Calculator</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Calculatrice</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Perform basic and advanced calculations with our intuitive calculator.</p>
+                    <p class="text-gray-600 mb-4">Effectuez des calculs de base et avancés avec notre calculatrice intuitive.</p>
                     <button class="text-blue-500 font-medium flex items-center">
-                        Open Tool
+                        Ouvrir l'outil
                         <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Calendar Card -->
+            <!-- Carte Calendrier -->
             <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
                  onclick="showTool('calendar')" 
                  data-aos="fade-up" 
@@ -103,17 +102,17 @@
                         <div class="bg-purple-100 p-3 rounded-lg mr-4">
                             <i data-feather="calendar" class="text-purple-600 w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800">Calendar</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Calendrier</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">View dates, plan events, and manage your schedule with our calendar tool.</p>
+                    <p class="text-gray-600 mb-4">Consultez les dates, planifiez des événements et gérez votre emploi du temps avec notre outil calendrier.</p>
                     <button class="text-blue-500 font-medium flex items-center">
-                        Open Tool
+                        Ouvrir l'outil
                         <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Password Generator Card -->
+            <!-- Carte Générateur de mots de passe -->
             <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
                  onclick="showTool('password')" 
                  data-aos="fade-up" 
@@ -123,17 +122,17 @@
                         <div class="bg-red-100 p-3 rounded-lg mr-4">
                             <i data-feather="key" class="text-red-600 w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800">Password Generator</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Générateur de mots de passe</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Create strong, secure passwords to protect your online accounts.</p>
+                    <p class="text-gray-600 mb-4">Créez des mots de passe forts et sécurisés pour protéger vos comptes en ligne.</p>
                     <button class="text-blue-500 font-medium flex items-center">
-                        Open Tool
+                        Ouvrir l'outil
                         <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Notes Card -->
+            <!-- Carte Notes -->
             <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
                  onclick="showTool('notes')" 
                  data-aos="fade-up" 
@@ -145,9 +144,9 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">Bloc-notes</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Take quick notes and save them for later access with our note-taking tool.</p>
+                    <p class="text-gray-600 mb-4">Prenez des notes rapides et enregistrez-les pour y accéder plus tard avec notre outil de prise de notes.</p>
                     <button class="text-blue-500 font-medium flex items-center">
-                        Open Tool
+                        Ouvrir l'outil
                         <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                     </button>
                 </div>
@@ -156,7 +155,7 @@
             </div>
         </div>
 
-        <!-- Tool Display Area -->
+        <!-- Zone d'affichage des outils -->
         <div id="tool-container" class="bg-white rounded-2xl shadow-lg p-6 mb-16 hidden" data-aos="fade-up">
             <div class="flex justify-between items-center mb-6">
                 <h2 id="tool-title" class="text-2xl font-bold text-gray-800"></h2>
@@ -167,36 +166,36 @@
             <div id="tool-content" class="min-h-[400px]"></div>
         </div>
 
-        <!-- Features Section -->
+        <!-- Section Caractéristiques -->
         <section class="mb-16" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Mini Tools?</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Pourquoi choisir Mini Outils ?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-xl shadow-md text-center">
                     <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-feather="zap" class="text-blue-500 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Lightning Fast</h3>
-                    <p class="text-gray-600">Our tools load instantly and perform operations quickly for maximum efficiency.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ultra Rapide</h3>
+                    <p class="text-gray-600">Nos outils se chargent instantanément et effectuent les opérations rapidement pour une efficacité maximale.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center">
                     <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-feather="lock" class="text-green-500 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Privacy Focused</h3>
-                    <p class="text-gray-600">Your data stays on your device. We don't store or track any personal information.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Respect de la vie privée</h3>
+                    <p class="text-gray-600">Vos données restent sur votre appareil. Nous ne stockons ni ne suivons aucune information personnelle.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center">
                     <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-feather="smartphone" class="text-purple-500 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fully Responsive</h3>
-                    <p class="text-gray-600">Access all tools seamlessly on any device - desktop, tablet, or mobile.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Complètement Responsive</h3>
+                    <p class="text-gray-600">Accédez à tous les outils de manière transparente sur n'importe quel appareil - ordinateur, tablette ou mobile.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Pied de page -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -205,15 +204,15 @@
                         <div class="bg-white text-blue-500 p-2 rounded-lg">
                             <i data-feather="tool" class="w-6 h-6"></i>
                         </div>
-                        <h2 class="text-2xl font-bold">Mini Tools</h2>
+                        <h2 class="text-2xl font-bold">Mini Outils</h2>
                     </div>
-                    <p class="text-gray-400 max-w-md">A collection of essential tools designed to simplify your daily tasks and boost productivity.</p>
+                    <p class="text-gray-400 max-w-md">Une collection d'outils essentiels conçus pour simplifier vos tâches quotidiennes et augmenter votre productivité.</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
                     <ul class="space-y-2">
-                        <li><a href="mini-tools/index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="mini-tools/about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="mini-tools/index.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="mini-tools/about" class="text-gray-400 hover:text-white transition">À propos</a></li>
                     </ul>
                 </div>
             </div>
@@ -223,38 +222,38 @@
     </footer>
 
     <script>
-        // Initialize AOS
+        // Initialiser AOS
         AOS.init({
             duration: 800,
             easing: 'ease-in-out'
         });
 
-        // Initialize Feather Icons
+        // Initialiser les icônes Feather
         feather.replace();
 
-        // Show tool function
+        // Fonction pour afficher l'outil
         function showTool(toolName) {
             const toolContainer = document.getElementById('tool-container');
             const toolTitle = document.getElementById('tool-title');
             const toolContent = document.getElementById('tool-content');
             
-            // Hide all tools first
+            // Masquer d'abord tous les outils
             toolContainer.classList.remove('hidden');
             
-            // Set active tool styling
+            // Appliquer le style d'outil actif
             document.querySelectorAll('.tool-card').forEach(card => {
                 card.classList.remove('active-tool');
             });
             
-            // Show selected tool
+            // Afficher l'outil sélectionné
             switch(toolName) {
                 case 'todo':
-                    toolTitle.textContent = 'To-Do List';
+                    toolTitle.textContent = 'Liste de tâches';
                     toolContent.innerHTML = `
                         <div class="mb-6">
                             <div class="flex">
-                                <input type="text" id="todo-input" placeholder="Add a new task..." class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <button onclick="addTodo()" class="bg-blue-500 text-white px-6 py-2 rounded-r-lg hover:bg-blue-600 transition">Add</button>
+                                <input type="text" id="todo-input" placeholder="Ajouter une nouvelle tâche..." class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <button onclick="addTodo()" class="bg-blue-500 text-white px-6 py-2 rounded-r-lg hover:bg-blue-600 transition">Ajouter</button>
                             </div>
                         </div>
                         <ul id="todo-list" class="space-y-2"></ul>
@@ -262,7 +261,7 @@
                     loadTodos();
                     break;
                 case 'calculator':
-                    toolTitle.textContent = 'Calculator';
+                    toolTitle.textContent = 'Calculatrice';
                     toolContent.innerHTML = `
                         <div class="max-w-md mx-auto">
                             <div class="bg-gray-100 rounded-lg p-4 mb-4">
@@ -296,7 +295,7 @@
                     `;
                     break;
                 case 'calendar':
-                    toolTitle.textContent = 'Calendar';
+                    toolTitle.textContent = 'Calendrier';
                     toolContent.innerHTML = `
                         <div class="max-w-2xl mx-auto">
                             <div class="flex justify-between items-center mb-6">
@@ -309,13 +308,13 @@
                                 </button>
                             </div>
                             <div class="grid grid-cols-7 gap-1 mb-2">
-                                <div class="text-center font-medium text-gray-500 py-2">Sun</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Mon</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Tue</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Wed</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Thu</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Fri</div>
-                                <div class="text-center font-medium text-gray-500 py-2">Sat</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Dim</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Lun</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Mar</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Mer</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Jeu</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Ven</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Sam</div>
                             </div>
                             <div id="calendar-grid" class="grid grid-cols-7 gap-1"></div>
                         </div>
@@ -323,11 +322,11 @@
                     renderCalendar();
                     break;
                 case 'password':
-                    toolTitle.textContent = 'Password Generator';
+                    toolTitle.textContent = 'Générateur de mots de passe';
                     toolContent.innerHTML = `
                         <div class="max-w-md mx-auto">
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2">Generated Password</label>
+                                <label class="block text-gray-700 mb-2">Mot de passe généré</label>
                                 <div class="flex">
                                     <input type="text" id="password-output" readonly class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg bg-gray-50">
                                     <button onclick="copyPassword()" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600">
@@ -336,29 +335,29 @@
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2">Password Length: <span id="length-value">12</span></label>
+                                <label class="block text-gray-700 mb-2">Longueur du mot de passe: <span id="length-value">12</span></label>
                                 <input type="range" id="password-length" min="6" max="30" value="12" class="w-full" onchange="updateLengthValue()">
                             </div>
                             <div class="mb-6 space-y-3">
                                 <div class="flex items-center">
                                     <input type="checkbox" id="uppercase" checked class="mr-2">
-                                    <label for="uppercase" class="text-gray-700">Include Uppercase Letters</label>
+                                    <label for="uppercase" class="text-gray-700">Inclure les majuscules</label>
                                 </div>
                                 <div class="flex items-center">
                                     <input type="checkbox" id="lowercase" checked class="mr-2">
-                                    <label for="lowercase" class="text-gray-700">Include Lowercase Letters</label>
+                                    <label for="lowercase" class="text-gray-700">Inclure les minuscules</label>
                                 </div>
                                 <div class="flex items-center">
                                     <input type="checkbox" id="numbers" checked class="mr-2">
-                                    <label for="numbers" class="text-gray-700">Include Numbers</label>
+                                    <label for="numbers" class="text-gray-700">Inclure les chiffres</label>
                                 </div>
                                 <div class="flex items-center">
                                     <input type="checkbox" id="symbols" class="mr-2">
-                                    <label for="symbols" class="text-gray-700">Include Symbols</label>
+                                    <label for="symbols" class="text-gray-700">Inclure les symboles</label>
                                 </div>
                             </div>
                             <button onclick="generatePassword()" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium">
-                                Generate Password
+                                Générer un mot de passe
                             </button>
                         </div>
                     `;
@@ -368,11 +367,11 @@
                     toolTitle.textContent = 'Bloc-notes';
                     toolContent.innerHTML = `
                         <div class="h-[500px] flex flex-col">
-                            <textarea id="notes-textarea" placeholder="Start typing your notes here..." class="flex-grow w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <textarea id="notes-textarea" placeholder="Commencez à taper vos notes ici..." class="flex-grow w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                             <div class="mt-4 text-right">
-                                <span id="char-count" class="text-gray-500 mr-4">0 characters</span>
+                                <span id="char-count" class="text-gray-500 mr-4">0 caractères</span>
                                 <button onclick="saveNotes()" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
-                                    Save Notes
+                                    Enregistrer les notes
                                 </button>
                             </div>
                         </div>
@@ -380,22 +379,22 @@
                     loadNotes();
                     break;
                 case 'url':
-                    toolTitle.textContent = 'URL Shortener';
+                    toolTitle.textContent = 'Raccourcisseur d\'URL';
                     toolContent.innerHTML = `
                         <div class="max-w-2xl mx-auto">
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2">Enter Long URL</label>
-                                <input type="url" id="long-url" placeholder="https://example.com/very-long-url..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <label class="block text-gray-700 mb-2">Entrez une URL longue</label>
+                                <input type="url" id="long-url" placeholder="https://exemple.com/url-tres-longue..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <button onclick="shortenUrl()" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium mb-6">
-                                Shorten URL
+                                Raccourcir l'URL
                             </button>
                             <div id="result-container" class="hidden">
-                                <label class="block text-gray-700 mb-2">Shortened URL</label>
+                                <label class="block text-gray-700 mb-2">URL raccourcie</label>
                                 <div class="flex">
                                     <input type="text" id="short-url" readonly class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg bg-gray-50">
                                     <button onclick="copyShortUrl()" class="bg-green-500 text-white px-4 py-3 rounded-r-lg hover:bg-green-600">
-                                        Copy
+                                        Copier
                                     </button>
                                 </div>
                             </div>
@@ -404,11 +403,11 @@
                     break;
             }
             
-            // Reinitialize feather icons for dynamic content
+            // Réinitialiser les icônes feather pour le contenu dynamique
             feather.replace();
         }
 
-        // Close tool function
+        // Fonction pour fermer l'outil
         function closeTool() {
             document.getElementById('tool-container').classList.add('hidden');
             document.querySelectorAll('.tool-card').forEach(card => {
@@ -416,7 +415,7 @@
             });
         }
 
-        // To-Do List Functions
+        // Fonctions pour la liste de tâches
         function addTodo() {
             const input = document.getElementById('todo-input');
             const text = input.value.trim();
@@ -470,7 +469,7 @@
             feather.replace();
         }
 
-        // Calculator Functions
+        // Fonctions pour la calculatrice
         let currentInput = '0';
         let previousInput = '';
         let operation = null;
@@ -483,7 +482,7 @@
             if (currentInput === '0' && number !== '.') {
                 currentInput = number;
             } else {
-                // Prevent multiple decimal points
+                // Empêcher les points décimaux multiples
                 if (number === '.' && currentInput.includes('.')) return;
                 currentInput += number;
             }
@@ -547,10 +546,10 @@
             updateDisplay();
         }
 
-        // Calendar Functions
+        // Fonctions pour le calendrier
         let currentDate = new Date();
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"
+        const monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+            "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
         ];
 
         function renderCalendar() {
@@ -565,19 +564,19 @@
             const calendarGrid = document.getElementById('calendar-grid');
             calendarGrid.innerHTML = '';
             
-            // Empty cells for days before the first day
+            // Cellules vides pour les jours avant le premier jour
             for (let i = 0; i < firstDay; i++) {
                 const emptyCell = document.createElement('div');
                 calendarGrid.appendChild(emptyCell);
             }
             
-            // Cells for each day of the month
+            // Cellules pour chaque jour du mois
             for (let day = 1; day <= daysInMonth; day++) {
                 const dayCell = document.createElement('div');
                 dayCell.className = 'text-center p-2 rounded-lg hover:bg-blue-100 cursor-pointer';
                 dayCell.textContent = day;
                 
-                // Highlight today
+                // Mettre en évidence aujourd'hui
                 const today = new Date();
                 if (year === today.getFullYear() && month === today.getMonth() && day === today.getDate()) {
                     dayCell.classList.add('bg-blue-500', 'text-white');
@@ -597,7 +596,7 @@
             renderCalendar();
         }
 
-        // Password Generator Functions
+        // Fonctions pour le générateur de mots de passe
         function updateLengthValue() {
             const length = document.getElementById('password-length').value;
             document.getElementById('length-value').textContent = length;
@@ -617,7 +616,7 @@
             if (includeSymbols) charset += '!@#$%^&*()_+-=[]{}|;:,.<>?';
             
             if (charset === '') {
-                alert('Please select at least one character type');
+                alert('Veuillez sélectionner au moins un type de caractère');
                 return;
             }
             
@@ -635,26 +634,26 @@
             passwordField.select();
             document.execCommand('copy');
             
-            // Show feedback
+            // Afficher un retour
             const originalText = passwordField.value;
-            passwordField.value = 'Copied!';
+            passwordField.value = 'Copié !';
             setTimeout(() => {
                 passwordField.value = originalText;
             }, 1000);
         }
 
-        // Notes Functions
+        // Fonctions pour les notes
         function saveNotes() {
             const notes = document.getElementById('notes-textarea').value;
             localStorage.setItem('notes', notes);
             
-            // Update character count
+            // Mettre à jour le nombre de caractères
             updateCharCount();
             
-            // Show feedback
+            // Afficher un retour
             const button = event.target;
             const originalText = button.textContent;
-            button.textContent = 'Saved!';
+            button.textContent = 'Enregistré !';
             setTimeout(() => {
                 button.textContent = originalText;
             }, 1000);
@@ -665,33 +664,33 @@
             document.getElementById('notes-textarea').value = notes;
             updateCharCount();
             
-            // Add event listener for character counting
+            // Ajouter un écouteur d'événements pour le comptage des caractères
             document.getElementById('notes-textarea').addEventListener('input', updateCharCount);
         }
 
         function updateCharCount() {
             const notes = document.getElementById('notes-textarea').value;
-            document.getElementById('char-count').textContent = `${notes.length} characters`;
+            document.getElementById('char-count').textContent = `${notes.length} caractères`;
         }
 
-        // URL Shortener Functions
+        // Fonctions pour le raccourcisseur d'URL
         function shortenUrl() {
             const longUrl = document.getElementById('long-url').value;
             
             if (!longUrl) {
-                alert('Please enter a URL');
+                alert('Veuillez entrer une URL');
                 return;
             }
             
-            // Simple validation
+            // Validation simple
             try {
                 new URL(longUrl);
             } catch (_) {
-                alert('Please enter a valid URL');
+                alert('Veuillez entrer une URL valide');
                 return;
             }
             
-            // Generate a simple short URL (in a real app, this would call an API)
+            // Générer une URL courte simple (dans une vraie application, cela appellerait une API)
             const shortCode = Math.random().toString(36).substring(2, 8);
             const shortUrl = `https://mini.tools/${shortCode}`;
             
@@ -704,10 +703,10 @@
             shortUrlField.select();
             document.execCommand('copy');
             
-            // Show feedback
+            // Afficher un retour
             const button = event.target;
             const originalText = button.textContent;
-            button.textContent = 'Copied!';
+            button.textContent = 'Copié !';
             setTimeout(() => {
                 button.textContent = originalText;
             }, 1000);
