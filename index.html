@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tools - All Your Essential Tools in One Place</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .active-tool {
+            background-color: #e0f2fe;
+            border-left: 4px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-500 text-white p-2 rounded-lg">
+                    <i data-feather="tool" class="w-6 h-6"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">Mini Tools</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="text-gray-600 hover:text-blue-500 font-medium">Home</a></li>
+                    <li><a href="/About" class="text-gray-600 hover:text-blue-500 font-medium">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">All Your Essential Tools in One Place</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mini Tools provides a collection of useful utilities to make your daily tasks easier and more efficient.</p>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- To-Do List Card -->
+            <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+                 onclick="showTool('todo')" 
+                 data-aos="fade-up" 
+                 data-aos-delay="100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i data-feather="check-circle" class="text-green-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">To-Do List</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Organize your tasks and boost productivity with our simple to-do list manager.</p>
+                    <button class="text-blue-500 font-medium flex items-center">
+                        Open Tool
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Calculator Card -->
+            <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+                 onclick="showTool('calculator')" 
+                 data-aos="fade-up" 
+                 data-aos-delay="200">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                            <i data-feather="cpu" class="text-yellow-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Calculator</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Perform basic and advanced calculations with our intuitive calculator.</p>
+                    <button class="text-blue-500 font-medium flex items-center">
+                        Open Tool
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Calendar Card -->
+            <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+                 onclick="showTool('calendar')" 
+                 data-aos="fade-up" 
+                 data-aos-delay="300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i data-feather="calendar" class="text-purple-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Calendar</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">View dates, plan events, and manage your schedule with our calendar tool.</p>
+                    <button class="text-blue-500 font-medium flex items-center">
+                        Open Tool
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Password Generator Card -->
+            <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+                 onclick="showTool('password')" 
+                 data-aos="fade-up" 
+                 data-aos-delay="400">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-lg mr-4">
+                            <i data-feather="key" class="text-red-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Password Generator</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Create strong, secure passwords to protect your online accounts.</p>
+                    <button class="text-blue-500 font-medium flex items-center">
+                        Open Tool
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Notes Card -->
+            <div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+                 onclick="showTool('notes')" 
+                 data-aos="fade-up" 
+                 data-aos-delay="500">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                            <i data-feather="edit" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Bloc-notes</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Take quick notes and save them for later access with our note-taking tool.</p>
+                    <button class="text-blue-500 font-medium flex items-center">
+                        Open Tool
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Tool Display Area -->
+        <div id="tool-container" class="bg-white rounded-2xl shadow-lg p-6 mb-16 hidden" data-aos="fade-up">
+            <div class="flex justify-between items-center mb-6">
+                <h2 id="tool-title" class="text-2xl font-bold text-gray-800"></h2>
+                <button onclick="closeTool()" class="text-gray-500 hover:text-gray-700">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="tool-content" class="min-h-[400px]"></div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Mini Tools?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="zap" class="text-blue-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Lightning Fast</h3>
+                    <p class="text-gray-600">Our tools load instantly and perform operations quickly for maximum efficiency.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="lock" class="text-green-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Privacy Focused</h3>
+                    <p class="text-gray-600">Your data stays on your device. We don't store or track any personal information.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="smartphone" class="text-purple-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fully Responsive</h3>
+                    <p class="text-gray-600">Access all tools seamlessly on any device - desktop, tablet, or mobile.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="bg-white text-blue-500 p-2 rounded-lg">
+                            <i data-feather="tool" class="w-6 h-6"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Mini Tools</h2>
+                    </div>
+                    <p class="text-gray-400 max-w-md">A collection of essential tools designed to simplify your daily tasks and boost productivity.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href=/ class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href=/about class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href=/Privacy class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; Mini Tools by default :) </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Show tool function
+        function showTool(toolName) {
+            const toolContainer = document.getElementById('tool-container');
+            const toolTitle = document.getElementById('tool-title');
+            const toolContent = document.getElementById('tool-content');
+            
+            // Hide all tools first
+            toolContainer.classList.remove('hidden');
+            
+            // Set active tool styling
+            document.querySelectorAll('.tool-card').forEach(card => {
+                card.classList.remove('active-tool');
+            });
+            
+            // Show selected tool
+            switch(toolName) {
+                case 'todo':
+                    toolTitle.textContent = 'To-Do List';
+                    toolContent.innerHTML = `
+                        <div class="mb-6">
+                            <div class="flex">
+                                <input type="text" id="todo-input" placeholder="Add a new task..." class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <button onclick="addTodo()" class="bg-blue-500 text-white px-6 py-2 rounded-r-lg hover:bg-blue-600 transition">Add</button>
+                            </div>
+                        </div>
+                        <ul id="todo-list" class="space-y-2"></ul>
+                    `;
+                    loadTodos();
+                    break;
+                case 'calculator':
+                    toolTitle.textContent = 'Calculator';
+                    toolContent.innerHTML = `
+                        <div class="max-w-md mx-auto">
+                            <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                <div id="calc-display" class="text-right text-2xl font-bold text-gray-800 h-8">0</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-2">
+                                <button onclick="clearCalc()" class="col-span-2 bg-red-500 text-white p-4 rounded-lg hover:bg-red-600">AC</button>
+                                <button onclick="deleteLast()" class="bg-yellow-500 text-white p-4 rounded-lg hover:bg-yellow-600">DEL</button>
+                                <button onclick="appendOperator('/')" class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600">÷</button>
+                                
+                                <button onclick="appendNumber('7')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">7</button>
+                                <button onclick="appendNumber('8')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">8</button>
+                                <button onclick="appendNumber('9')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">9</button>
+                                <button onclick="appendOperator('*')" class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600">×</button>
+                                
+                                <button onclick="appendNumber('4')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">4</button>
+                                <button onclick="appendNumber('5')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">5</button>
+                                <button onclick="appendNumber('6')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">6</button>
+                                <button onclick="appendOperator('-')" class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600">-</button>
+                                
+                                <button onclick="appendNumber('1')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">1</button>
+                                <button onclick="appendNumber('2')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">2</button>
+                                <button onclick="appendNumber('3')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">3</button>
+                                <button onclick="appendOperator('+')" class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600">+</button>
+                                
+                                <button onclick="appendNumber('0')" class="col-span-2 bg-gray-200 p-4 rounded-lg hover:bg-gray-300">0</button>
+                                <button onclick="appendNumber('.')" class="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">.</button>
+                                <button onclick="calculate()" class="bg-green-500 text-white p-4 rounded-lg hover:bg-green-600">=</button>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 'calendar':
+                    toolTitle.textContent = 'Calendar';
+                    toolContent.innerHTML = `
+                        <div class="max-w-2xl mx-auto">
+                            <div class="flex justify-between items-center mb-6">
+                                <button onclick="prevMonth()" class="p-2 rounded-full hover:bg-gray-200">
+                                    <i data-feather="chevron-left" class="w-5 h-5"></i>
+                                </button>
+                                <h3 id="current-month" class="text-xl font-bold"></h3>
+                                <button onclick="nextMonth()" class="p-2 rounded-full hover:bg-gray-200">
+                                    <i data-feather="chevron-right" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                            <div class="grid grid-cols-7 gap-1 mb-2">
+                                <div class="text-center font-medium text-gray-500 py-2">Sun</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Mon</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Tue</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Wed</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Thu</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Fri</div>
+                                <div class="text-center font-medium text-gray-500 py-2">Sat</div>
+                            </div>
+                            <div id="calendar-grid" class="grid grid-cols-7 gap-1"></div>
+                        </div>
+                    `;
+                    renderCalendar();
+                    break;
+                case 'password':
+                    toolTitle.textContent = 'Password Generator';
+                    toolContent.innerHTML = `
+                        <div class="max-w-md mx-auto">
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2">Generated Password</label>
+                                <div class="flex">
+                                    <input type="text" id="password-output" readonly class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg bg-gray-50">
+                                    <button onclick="copyPassword()" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600">
+                                        <i data-feather="copy" class="w-5 h-5"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2">Password Length: <span id="length-value">12</span></label>
+                                <input type="range" id="password-length" min="6" max="30" value="12" class="w-full" onchange="updateLengthValue()">
+                            </div>
+                            <div class="mb-6 space-y-3">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="uppercase" checked class="mr-2">
+                                    <label for="uppercase" class="text-gray-700">Include Uppercase Letters</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="lowercase" checked class="mr-2">
+                                    <label for="lowercase" class="text-gray-700">Include Lowercase Letters</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="numbers" checked class="mr-2">
+                                    <label for="numbers" class="text-gray-700">Include Numbers</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="symbols" class="mr-2">
+                                    <label for="symbols" class="text-gray-700">Include Symbols</label>
+                                </div>
+                            </div>
+                            <button onclick="generatePassword()" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium">
+                                Generate Password
+                            </button>
+                        </div>
+                    `;
+                    generatePassword();
+                    break;
+                case 'notes':
+                    toolTitle.textContent = 'Bloc-notes';
+                    toolContent.innerHTML = `
+                        <div class="h-[500px] flex flex-col">
+                            <textarea id="notes-textarea" placeholder="Start typing your notes here..." class="flex-grow w-full p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <div class="mt-4 text-right">
+                                <span id="char-count" class="text-gray-500 mr-4">0 characters</span>
+                                <button onclick="saveNotes()" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+                                    Save Notes
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    loadNotes();
+                    break;
+                case 'url':
+                    toolTitle.textContent = 'URL Shortener';
+                    toolContent.innerHTML = `
+                        <div class="max-w-2xl mx-auto">
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2">Enter Long URL</label>
+                                <input type="url" id="long-url" placeholder="https://example.com/very-long-url..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <button onclick="shortenUrl()" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium mb-6">
+                                Shorten URL
+                            </button>
+                            <div id="result-container" class="hidden">
+                                <label class="block text-gray-700 mb-2">Shortened URL</label>
+                                <div class="flex">
+                                    <input type="text" id="short-url" readonly class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg bg-gray-50">
+                                    <button onclick="copyShortUrl()" class="bg-green-500 text-white px-4 py-3 rounded-r-lg hover:bg-green-600">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            // Reinitialize feather icons for dynamic content
+            feather.replace();
+        }
+
+        // Close tool function
+        function closeTool() {
+            document.getElementById('tool-container').classList.add('hidden');
+            document.querySelectorAll('.tool-card').forEach(card => {
+                card.classList.remove('active-tool');
+            });
+        }
+
+        // To-Do List Functions
+        function addTodo() {
+            const input = document.getElementById('todo-input');
+            const text = input.value.trim();
+            
+            if (text) {
+                const todos = JSON.parse(localStorage.getItem('todos') || '[]');
+                todos.push({ text, completed: false });
+                localStorage.setItem('todos', JSON.stringify(todos));
+                input.value = '';
+                loadTodos();
+            }
+        }
+
+        function toggleTodo(index) {
+            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
+            todos[index].completed = !todos[index].completed;
+            localStorage.setItem('todos', JSON.stringify(todos));
+            loadTodos();
+        }
+
+        function deleteTodo(index) {
+            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
+            todos.splice(index, 1);
+            localStorage.setItem('todos', JSON.stringify(todos));
+            loadTodos();
+        }
+
+        function loadTodos() {
+            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
+            const todoList = document.getElementById('todo-list');
+            
+            todoList.innerHTML = '';
+            
+            todos.forEach((todo, index) => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center justify-between p-4 bg-gray-50 rounded-lg';
+                
+                li.innerHTML = `
+                    <div class="flex items-center">
+                        <input type="checkbox" ${todo.completed ? 'checked' : ''} onchange="toggleTodo(${index})" class="mr-3 h-5 w-5 text-blue-500 rounded">
+                        <span class="${todo.completed ? 'line-through text-gray-500' : 'text-gray-800'}">${todo.text}</span>
+                    </div>
+                    <button onclick="deleteTodo(${index})" class="text-red-500 hover:text-red-700">
+                        <i data-feather="trash-2" class="w-5 h-5"></i>
+                    </button>
+                `;
+                
+                todoList.appendChild(li);
+            });
+            
+            feather.replace();
+        }
+
+        // Calculator Functions
+        let currentInput = '0';
+        let previousInput = '';
+        let operation = null;
+
+        function updateDisplay() {
+            document.getElementById('calc-display').textContent = currentInput;
+        }
+
+        function appendNumber(number) {
+            if (currentInput === '0' && number !== '.') {
+                currentInput = number;
+            } else {
+                // Prevent multiple decimal points
+                if (number === '.' && currentInput.includes('.')) return;
+                currentInput += number;
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (currentInput !== '') {
+                if (previousInput !== '') {
+                    calculate();
+                }
+                operation = op;
+                previousInput = currentInput;
+                currentInput = '';
+            }
+        }
+
+        function calculate() {
+            if (previousInput === '' || currentInput === '' || operation === null) return;
+            
+            let result;
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+            
+            switch(operation) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    result = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            
+            currentInput = result.toString();
+            operation = null;
+            previousInput = '';
+            updateDisplay();
+        }
+
+        function clearCalc() {
+            currentInput = '0';
+            previousInput = '';
+            operation = null;
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            if (currentInput.length === 1) {
+                currentInput = '0';
+            } else {
+                currentInput = currentInput.slice(0, -1);
+            }
+            updateDisplay();
+        }
+
+        // Calendar Functions
+        let currentDate = new Date();
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        function renderCalendar() {
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            document.getElementById('current-month').textContent = `${monthNames[month]} ${year}`;
+            
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            
+            const calendarGrid = document.getElementById('calendar-grid');
+            calendarGrid.innerHTML = '';
+            
+            // Empty cells for days before the first day
+            for (let i = 0; i < firstDay; i++) {
+                const emptyCell = document.createElement('div');
+                calendarGrid.appendChild(emptyCell);
+            }
+            
+            // Cells for each day of the month
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dayCell = document.createElement('div');
+                dayCell.className = 'text-center p-2 rounded-lg hover:bg-blue-100 cursor-pointer';
+                dayCell.textContent = day;
+                
+                // Highlight today
+                const today = new Date();
+                if (year === today.getFullYear() && month === today.getMonth() && day === today.getDate()) {
+                    dayCell.classList.add('bg-blue-500', 'text-white');
+                }
+                
+                calendarGrid.appendChild(dayCell);
+            }
+        }
+
+        function prevMonth() {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar();
+        }
+
+        function nextMonth() {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar();
+        }
+
+        // Password Generator Functions
+        function updateLengthValue() {
+            const length = document.getElementById('password-length').value;
+            document.getElementById('length-value').textContent = length;
+        }
+
+        function generatePassword() {
+            const length = parseInt(document.getElementById('password-length').value);
+            const includeUppercase = document.getElementById('uppercase').checked;
+            const includeLowercase = document.getElementById('lowercase').checked;
+            const includeNumbers = document.getElementById('numbers').checked;
+            const includeSymbols = document.getElementById('symbols').checked;
+            
+            let charset = '';
+            if (includeUppercase) charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            if (includeLowercase) charset += 'abcdefghijklmnopqrstuvwxyz';
+            if (includeNumbers) charset += '0123456789';
+            if (includeSymbols) charset += '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            
+            if (charset === '') {
+                alert('Please select at least one character type');
+                return;
+            }
+            
+            let password = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            
+            document.getElementById('password-output').value = password;
+        }
+
+        function copyPassword() {
+            const passwordField = document.getElementById('password-output');
+            passwordField.select();
+            document.execCommand('copy');
+            
+            // Show feedback
+            const originalText = passwordField.value;
+            passwordField.value = 'Copied!';
+            setTimeout(() => {
+                passwordField.value = originalText;
+            }, 1000);
+        }
+
+        // Notes Functions
+        function saveNotes() {
+            const notes = document.getElementById('notes-textarea').value;
+            localStorage.setItem('notes', notes);
+            
+            // Update character count
+            updateCharCount();
+            
+            // Show feedback
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = 'Saved!';
+            setTimeout(() => {
+                button.textContent = originalText;
+            }, 1000);
+        }
+
+        function loadNotes() {
+            const notes = localStorage.getItem('notes') || '';
+            document.getElementById('notes-textarea').value = notes;
+            updateCharCount();
+            
+            // Add event listener for character counting
+            document.getElementById('notes-textarea').addEventListener('input', updateCharCount);
+        }
+
+        function updateCharCount() {
+            const notes = document.getElementById('notes-textarea').value;
+            document.getElementById('char-count').textContent = `${notes.length} characters`;
+        }
+            
+            // Show feedback
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = originalText;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
