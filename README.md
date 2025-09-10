@@ -22,6 +22,14 @@
 -   **⌛ Chronomètre** -
 -   **☕ Pomodoro** -
 -   **⌚ Timestamp generator** -
+-   Sélecteur aléatoire
+-   Nombre aléatoire
+-   Pile ou face
+-   Conversion d’images
+-   Compresseur d’images
+-   Visionneuse JSON
+-   Convertisseur d’unités
+-   Compteur de jours
 ---
 
 ## 🛠️ Built With
