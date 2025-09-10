@@ -18,7 +18,10 @@
 -   **📅 Calendar** - View the current month and navigate through dates.
 -   **🔐 Password Generator** - Generate strong and random passwords instantly.
 -   **📝 Notes App** - Jot down your thoughts, saved automatically in your browser.
-
+-   **⏳ Timer** -
+-   **⌛ Chronomètre** -
+-   **☕ Pomodoro** -
+-   **⌚ Timestamp generator** -
 ---
 
 ## 🛠️ Built With
