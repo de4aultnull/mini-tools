@@ -230,6 +230,142 @@
         </button>
     </div>
 </div>
+<!-- Carte Sélecteur aléatoire -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('randomPicker')" data-aos="fade-up" data-aos-delay="1000">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-pink-100 p-3 rounded-lg mr-4">
+                <i data-feather="list" class="text-pink-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Sélecteur aléatoire</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Ajoutez des mots ou noms et tirez-en un au hasard.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Générateur de nombres aléatoires -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('randomNumber')" data-aos="fade-up" data-aos-delay="1100">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                <i data-feather="hash" class="text-yellow-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Nombre aléatoire</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Générez un nombre entre deux valeurs.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Pile ou face -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('coinFlip')" data-aos="fade-up" data-aos-delay="1200">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <i data-feather="circle" class="text-indigo-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Pile ou face</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Lancez une pièce virtuelle.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Conversion d’images -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('imageConverter')" data-aos="fade-up" data-aos-delay="1300">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                <i data-feather="image" class="text-green-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Conversion d’images</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Convertissez PNG ⇆ JPG ⇆ WEBP.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Compresseur d’images -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('imageCompressor')" data-aos="fade-up" data-aos-delay="1400">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-red-100 p-3 rounded-lg mr-4">
+                <i data-feather="minimize-2" class="text-red-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Compresseur d’images</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Réduisez la taille de vos images.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Visionneuse JSON -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('jsonViewer')" data-aos="fade-up" data-aos-delay="1500">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <i data-feather="code" class="text-blue-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Visionneuse JSON</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Collez du JSON et explorez-le facilement.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Convertisseur d’unités -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('unitConverter')" data-aos="fade-up" data-aos-delay="1600">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i data-feather="sliders" class="text-purple-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Convertisseur d’unités</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Convertissez des longueurs, poids, températures...</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Compteur de jours -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('dayCounter')" data-aos="fade-up" data-aos-delay="1700">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                <i data-feather="calendar" class="text-gray-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Compteur de jours</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Comptez les jours entre deux dates.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
 
             </div>
         </div>
@@ -620,7 +756,116 @@ case 'timestamp':
                             </div>
                         </div>
                     `;
-                    break;
+                    case 'randomPicker':
+    toolTitle.textContent = 'Sélecteur aléatoire';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto">
+            <textarea id="picker-input" rows="5" placeholder="Entrez des mots ou noms séparés par une ligne..." class="w-full p-3 border rounded mb-4"></textarea>
+            <button onclick="pickRandom()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Tirer au sort</button>
+            <div id="picker-result" class="mt-4 text-center text-xl font-bold text-gray-800"></div>
+        </div>
+    `;
+    break;
+
+case 'randomNumber':
+    toolTitle.textContent = 'Générateur de nombres aléatoires';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <div class="flex space-x-2 mb-4">
+                <input id="min-number" type="number" value="1" class="w-1/2 p-2 border rounded" placeholder="Min">
+                <input id="max-number" type="number" value="100" class="w-1/2 p-2 border rounded" placeholder="Max">
+            </div>
+            <button onclick="generateRandomNumber()" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600">Générer</button>
+            <div id="random-number-result" class="mt-4 text-3xl font-bold text-gray-800"></div>
+        </div>
+    `;
+    break;
+
+case 'coinFlip':
+    toolTitle.textContent = 'Pile ou face';
+    toolContent.innerHTML = `
+        <div class="text-center">
+            <button onclick="flipCoin()" class="bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600">Lancer la pièce</button>
+            <div id="coin-result" class="mt-6 text-4xl font-bold text-gray-800"></div>
+        </div>
+    `;
+    break;
+
+case 'imageConverter':
+    toolTitle.textContent = 'Conversion d’images';
+    toolContent.innerHTML = `
+        <div class="text-center">
+            <input type="file" id="image-file" accept="image/*" class="mb-4">
+            <select id="convert-format" class="p-2 border rounded mb-4">
+                <option value="image/png">PNG</option>
+                <option value="image/jpeg">JPG</option>
+                <option value="image/webp">WEBP</option>
+            </select>
+            <button onclick="convertImage()" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Convertir</button>
+            <div id="converted-image" class="mt-6"></div>
+        </div>
+    `;
+    break;
+
+case 'imageCompressor':
+    toolTitle.textContent = 'Compresseur d’images';
+    toolContent.innerHTML = `
+        <div class="text-center">
+            <input type="file" id="compress-file" accept="image/*" class="mb-4">
+            <input type="range" id="quality" min="0.1" max="1" step="0.1" value="0.7" class="w-full mb-4">
+            <button onclick="compressImage()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Compresser</button>
+            <div id="compressed-image" class="mt-6"></div>
+        </div>
+    `;
+    break;
+
+case 'jsonViewer':
+    toolTitle.textContent = 'Visionneuse JSON';
+    toolContent.innerHTML = `
+        <div class="max-w-2xl mx-auto">
+            <textarea id="json-input" rows="10" placeholder="Collez du JSON ici..." class="w-full p-3 border rounded mb-4"></textarea>
+            <button onclick="viewJSON()" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Afficher</button>
+            <pre id="json-output" class="bg-gray-100 p-4 rounded mt-4 overflow-x-auto text-left"></pre>
+        </div>
+    `;
+    break;
+
+case 'unitConverter':
+    toolTitle.textContent = 'Convertisseur d’unités';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <select id="unit-type" class="p-2 border rounded mb-4 w-full" onchange="updateUnitOptions()">
+                <option value="length">Longueur</option>
+                <option value="weight">Poids</option>
+                <option value="temperature">Température</option>
+            </select>
+            <div class="flex space-x-2 mb-4">
+                <input id="unit-input" type="number" class="w-1/2 p-2 border rounded" placeholder="Valeur">
+                <select id="unit-from" class="w-1/2 p-2 border rounded"></select>
+            </div>
+            <div class="flex space-x-2 mb-4">
+                <select id="unit-to" class="w-1/2 p-2 border rounded"></select>
+                <button onclick="convertUnit()" class="w-1/2 bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600">Convertir</button>
+            </div>
+            <div id="unit-result" class="mt-4 text-xl font-bold text-gray-800"></div>
+        </div>
+    `;
+    updateUnitOptions();
+    break;
+
+case 'dayCounter':
+    toolTitle.textContent = 'Compteur de jours';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <div class="flex space-x-2 mb-4">
+                <input type="date" id="date-start" class="w-1/2 p-2 border rounded">
+                <input type="date" id="date-end" class="w-1/2 p-2 border rounded">
+            </div>
+            <button onclick="countDays()" class="w-full bg-gray-500 text-white py-2 rounded-lg hover:bg-gray-600">Compter</button>
+            <div id="days-result" class="mt-4 text-xl font-bold text-gray-800"></div>
+        </div>
+    `;
+    break;
             }
             
             // Réinitialiser les icônes feather pour le contenu dynamique
@@ -1141,6 +1386,144 @@ function generateTimestamp() {
     document.getElementById('unix-milliseconds').value = timestampMilliseconds;
     document.getElementById('formatted-date').value = date.toLocaleString('fr-FR');
 }
+
+// --- Sélecteur aléatoire ---
+function pickRandom() {
+    const items = document.getElementById('picker-input').value.trim().split('\n').filter(Boolean);
+    if (items.length === 0) {
+        alert("Ajoutez au moins un élément !");
+        return;
+    }
+    const choice = items[Math.floor(Math.random() * items.length)];
+    document.getElementById('picker-result').textContent = "🎉 " + choice;
+}
+
+// --- Générateur de nombres aléatoires ---
+function generateRandomNumber() {
+    const min = parseInt(document.getElementById('min-number').value);
+    const max = parseInt(document.getElementById('max-number').value);
+    if (isNaN(min) || isNaN(max) || min >= max) {
+        alert("Veuillez entrer un intervalle valide.");
+        return;
+    }
+    const result = Math.floor(Math.random() * (max - min + 1)) + min;
+    document.getElementById('random-number-result').textContent = result;
+}
+
+// --- Pile ou face ---
+function flipCoin() {
+    const result = Math.random() < 0.5 ? "Pile" : "Face";
+    document.getElementById('coin-result').textContent = result;
+}
+
+// --- Conversion d’images ---
+function convertImage() {
+    const file = document.getElementById('image-file').files[0];
+    const format = document.getElementById('convert-format').value;
+    if (!file) { alert("Choisissez une image."); return; }
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const img = new Image();
+        img.src = e.target.result;
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            const converted = canvas.toDataURL(format);
+            document.getElementById('converted-image').innerHTML = `<a href="${converted}" download="converted.${format.split('/')[1]}" class="text-blue-500 underline">Télécharger</a>`;
+        };
+    };
+    reader.readAsDataURL(file);
+}
+
+// --- Compresseur d’images ---
+function compressImage() {
+    const file = document.getElementById('compress-file').files[0];
+    const quality = parseFloat(document.getElementById('quality').value);
+    if (!file) { alert("Choisissez une image."); return; }
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const img = new Image();
+        img.src = e.target.result;
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            const compressed = canvas.toDataURL('image/jpeg', quality);
+            document.getElementById('compressed-image').innerHTML = `<a href="${compressed}" download="compressed.jpg" class="text-red-500 underline">Télécharger</a>`;
+        };
+    };
+    reader.readAsDataURL(file);
+}
+
+// --- Visionneuse JSON ---
+function viewJSON() {
+    try {
+        const input = document.getElementById('json-input').value;
+        const obj = JSON.parse(input);
+        document.getElementById('json-output').textContent = JSON.stringify(obj, null, 2);
+    } catch (e) {
+        document.getElementById('json-output').textContent = "⚠️ JSON invalide !";
+    }
+}
+
+// --- Convertisseur d’unités ---
+function updateUnitOptions() {
+    const type = document.getElementById('unit-type').value;
+    const from = document.getElementById('unit-from');
+    const to = document.getElementById('unit-to');
+    let options = [];
+    if (type === "length") options = ["m","km","cm","mm"];
+    if (type === "weight") options = ["kg","g","lb"];
+    if (type === "temperature") options = ["C","F","K"];
+    from.innerHTML = options.map(o=>`<option value="${o}">${o}</option>`).join('');
+    to.innerHTML = options.map(o=>`<option value="${o}">${o}</option>`).join('');
+}
+
+function convertUnit() {
+    const type = document.getElementById('unit-type').value;
+    const value = parseFloat(document.getElementById('unit-input').value);
+    const from = document.getElementById('unit-from').value;
+    const to = document.getElementById('unit-to').value;
+    if (isNaN(value)) { alert("Entrez une valeur"); return; }
+    let result = value;
+
+    if (type === "length") {
+        const factors = {m:1, km:1000, cm:0.01, mm:0.001};
+        result = value * factors[from] / factors[to];
+    }
+    if (type === "weight") {
+        const factors = {kg:1, g:0.001, lb:0.453592};
+        result = value * factors[from] / factors[to];
+    }
+    if (type === "temperature") {
+        if (from === "C" && to === "F") result = value*9/5+32;
+        if (from === "F" && to === "C") result = (value-32)*5/9;
+        if (from === "C" && to === "K") result = value+273.15;
+        if (from === "K" && to === "C") result = value-273.15;
+        if (from === "F" && to === "K") result = (value-32)*5/9+273.15;
+        if (from === "K" && to === "F") result = (value-273.15)*9/5+32;
+    }
+
+    document.getElementById('unit-result').textContent = result.toFixed(2) + " " + to;
+}
+
+// --- Compteur de jours ---
+function countDays() {
+    const start = new Date(document.getElementById('date-start').value);
+    const end = new Date(document.getElementById('date-end').value);
+    if (isNaN(start) || isNaN(end)) {
+        alert("Sélectionnez deux dates !");
+        return;
+    }
+    const diff = Math.floor((end - start) / (1000*60*60*24));
+    document.getElementById('days-result').textContent = diff + " jours";
+}
+
     </script>
 </body>
 </html>
