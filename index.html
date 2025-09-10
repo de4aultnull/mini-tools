@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Outils - Tous vos outils essentiels au même endroit</title>
+    <title>Mini Tools - Tous vos outils essentiels au même endroit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -33,7 +33,7 @@
                 <div class="bg-blue-500 text-white p-2 rounded-lg">
                     <i data-feather="tool" class="w-6 h-6"></i>
                 </div>
-                <h1 class="text-2xl font-bold text-gray-800">Mini Outils</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Mini Tools</h1>
             </div>
             <nav>
                 <ul class="flex space-x-6">
@@ -47,7 +47,7 @@
     <main class="container mx-auto px-4 py-8">
         <div class="text-center mb-12" data-aos="fade-up">
             <h2 class="text-4xl font-bold text-gray-800 mb-4">Tous vos outils essentiels au même endroit</h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mini Outils propose une collection d'utilitaires pratiques pour faciliter et optimiser vos tâches quotidiennes.</p>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mini Tools propose une collection d'utilitaires pratiques pour faciliter et optimiser vos tâches quotidiennes.</p>
         </div>
 
         <!-- Grille d'outils -->
@@ -151,6 +151,85 @@
                     </button>
                 </div>
             </div>
+            <!-- Carte Chronomètre -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('stopwatch')" 
+     data-aos="fade-up" 
+     data-aos-delay="600">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <i data-feather="clock" class="text-blue-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Chronomètre</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Mesurez le temps avec précision grâce à notre chronomètre simple et efficace.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil
+            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Pomodoro -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('pomodoro')" 
+     data-aos="fade-up" 
+     data-aos-delay="700">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-red-100 p-3 rounded-lg mr-4">
+                <i data-feather="coffee" class="text-red-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Pomodoro</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Augmentez votre productivité avec la technique Pomodoro (25 minutes de travail, 5 minutes de pause).</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil
+            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Timeur -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('timer')" 
+     data-aos="fade-up" 
+     data-aos-delay="800">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                <i data-feather="alarm-clock" class="text-green-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Timeur</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Définissez un compte à rebours personnalisé pour vos activités et recevez une alerte à la fin.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil
+            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Carte Générateur de Timestamp -->
+<div class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer" 
+     onclick="showTool('timestamp')" 
+     data-aos="fade-up" 
+     data-aos-delay="900">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i data-feather="calendar" class="text-purple-600 w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Générateur de Timestamp</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Générez des timestamps Unix à partir de dates spécifiques avec une interface intuitive.</p>
+        <button class="text-blue-500 font-medium flex items-center">
+            Ouvrir l'outil
+            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+        </button>
+    </div>
+</div>
 
             </div>
         </div>
@@ -195,7 +274,7 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -204,7 +283,7 @@
                         <div class="bg-white text-blue-500 p-2 rounded-lg">
                             <i data-feather="tool" class="w-6 h-6"></i>
                         </div>
-                        <h2 class="text-2xl font-bold">Mini Outils</h2>
+                        <h2 class="text-2xl font-bold">Mini Tools</h2>
                     </div>
                     <p class="text-gray-400 max-w-md">Une collection d'outils essentiels conçus pour simplifier vos tâches quotidiennes et augmenter votre productivité.</p>
                 </div>
@@ -260,6 +339,147 @@
                     `;
                     loadTodos();
                     break;
+                case 'stopwatch':
+    toolTitle.textContent = 'Chronomètre';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <div class="text-6xl font-bold mb-8" id="stopwatch-display">00:00:00</div>
+            <div class="flex justify-center space-x-4">
+                <button id="start-stopwatch" onclick="startStopwatch()" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition font-medium">
+                    Démarrer
+                </button>
+                <button id="pause-stopwatch" onclick="pauseStopwatch()" class="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition font-medium hidden">
+                    Pause
+                </button>
+                <button onclick="resetStopwatch()" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition font-medium">
+                    Réinitialiser
+                </button>
+                <button onclick="lapStopwatch()" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-medium">
+                    Tour
+                </button>
+            </div>
+            <div id="laps-container" class="mt-8 max-h-60 overflow-y-auto"></div>
+        </div>
+    `;
+    resetStopwatch();
+    break;
+case 'pomodoro':
+    toolTitle.textContent = 'Pomodoro';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <div class="mb-6">
+                <div class="text-6xl font-bold mb-2" id="pomodoro-display">25:00</div>
+                <div id="pomodoro-status" class="text-xl text-gray-600">Prêt à travailler</div>
+            </div>
+            <div class="flex justify-center space-x-4 mb-6">
+                <button id="start-pomodoro" onclick="startPomodoro()" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition font-medium">
+                    Démarrer
+                </button>
+                <button id="pause-pomodoro" onclick="pausePomodoro()" class="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition font-medium hidden">
+                    Pause
+                </button>
+                <button onclick="resetPomodoro()" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition font-medium">
+                    Réinitialiser
+                </button>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h4 class="font-medium mb-2">Configuration Pomodoro</h4>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm mb-1">Travail (minutes)</label>
+                        <input type="number" id="work-time" min="1" max="60" value="25" class="w-full p-2 border rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">Pause (minutes)</label>
+                        <input type="number" id="break-time" min="1" max="30" value="5" class="w-full p-2 border rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    break;
+case 'timer':
+    toolTitle.textContent = 'Timeur';
+    toolContent.innerHTML = `
+        <div class="max-w-md mx-auto text-center">
+            <div class="mb-6">
+                <div class="text-6xl font-bold mb-2" id="timer-display">00:00:00</div>
+                <div class="flex justify-center space-x-2 mb-4">
+                    <input type="number" id="timer-hours" min="0" max="23" value="0" placeholder="Heures" class="w-20 p-2 border rounded text-center">
+                    <span class="self-center">:</span>
+                    <input type="number" id="timer-minutes" min="0" max="59" value="0" placeholder="Minutes" class="w-20 p-2 border rounded text-center">
+                    <span class="self-center">:</span>
+                    <input type="number" id="timer-seconds" min="0" max="59" value="0" placeholder="Secondes" class="w-20 p-2 border rounded text-center">
+                </div>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <button id="start-timer" onclick="startTimer()" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition font-medium">
+                    Démarrer
+                </button>
+                <button id="pause-timer" onclick="pauseTimer()" class="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition font-medium hidden">
+                    Pause
+                </button>
+                <button onclick="resetTimer()" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition font-medium">
+                    Réinitialiser
+                </button>
+            </div>
+        </div>
+    `;
+    updateTimerDisplay();
+    break;
+case 'timestamp':
+    toolTitle.textContent = 'Générateur de Timestamp';
+    toolContent.innerHTML = `
+        <div class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="text-lg font-medium mb-3">Sélectionnez une date et heure</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Date</label>
+                            <input type="date" id="timestamp-date" class="w-full p-2 border rounded" value="${new Date().toISOString().split('T')[0]}">
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Heures</label>
+                                <input type="number" id="timestamp-hours" min="0" max="23" value="${new Date().getHours()}" class="w-full p-2 border rounded">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Minutes</label>
+                                <input type="number" id="timestamp-minutes" min="0" max="59" value="${new Date().getMinutes()}" class="w-full p-2 border rounded">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Secondes</label>
+                                <input type="number" id="timestamp-seconds" min="0" max="59" value="${new Date().getSeconds()}" class="w-full p-2 border rounded">
+                            </div>
+                        </div>
+                        <button onclick="generateTimestamp()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">
+                            Générer le Timestamp
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-3">Résultats</h3>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-1">Timestamp Unix (secondes)</label>
+                            <input type="text" id="unix-seconds" readonly class="w-full p-2 bg-white border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-1">Timestamp Unix (millisecondes)</label>
+                            <input type="text" id="unix-milliseconds" readonly class="w-full p-2 bg-white border rounded">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Date formatée</label>
+                            <input type="text" id="formatted-date" readonly class="w-full p-2 bg-white border rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    generateTimestamp();
+    break;
                 case 'calculator':
                     toolTitle.textContent = 'Calculatrice';
                     toolContent.innerHTML = `
@@ -673,44 +893,254 @@
             document.getElementById('char-count').textContent = `${notes.length} caractères`;
         }
 
-        // Fonctions pour le raccourcisseur d'URL
-        function shortenUrl() {
-            const longUrl = document.getElementById('long-url').value;
+// Variables globales pour les minuteries
+let stopwatchInterval;
+let stopwatchTime = 0;
+let stopwatchRunning = false;
+let stopwatchLaps = [];
+
+let pomodoroInterval;
+let pomodoroTime = 0;
+let pomodoroRunning = false;
+let pomodoroMode = 'work'; // 'work' or 'break'
+
+let timerInterval;
+let timerTime = 0;
+let timerRunning = false;
+let timerEndTime = 0; // <-- ajout pour calcul précis
+
+// Fonctions pour le chronomètre
+function startStopwatch() {
+    if (!stopwatchRunning) {
+        stopwatchRunning = true;
+        const startTime = Date.now() - stopwatchTime;
+        stopwatchInterval = setInterval(() => {
+            stopwatchTime = Date.now() - startTime;
+            updateStopwatchDisplay();
+        }, 10);
+        
+        document.getElementById('start-stopwatch').classList.add('hidden');
+        document.getElementById('pause-stopwatch').classList.remove('hidden');
+    }
+}
+
+function pauseStopwatch() {
+    if (stopwatchRunning) {
+        stopwatchRunning = false;
+        clearInterval(stopwatchInterval);
+        
+        document.getElementById('start-stopwatch').classList.remove('hidden');
+        document.getElementById('pause-stopwatch').classList.add('hidden');
+    }
+}
+
+function resetStopwatch() {
+    pauseStopwatch();
+    stopwatchTime = 0;
+    stopwatchLaps = [];
+    updateStopwatchDisplay();
+    document.getElementById('laps-container').innerHTML = '';
+}
+
+function lapStopwatch() {
+    if (stopwatchRunning) {
+        stopwatchLaps.push(stopwatchTime);
+        const lapsContainer = document.getElementById('laps-container');
+        const lapItem = document.createElement('div');
+        lapItem.className = 'p-2 border-b border-gray-200 flex justify-between';
+        lapItem.innerHTML = `
+            <span>Tour ${stopwatchLaps.length}</span>
+            <span>${formatTime(stopwatchTime)}</span>
+        `;
+        lapsContainer.prepend(lapItem);
+    }
+}
+
+function updateStopwatchDisplay() {
+    document.getElementById('stopwatch-display').textContent = formatTime(stopwatchTime);
+}
+
+function formatTime(milliseconds) {
+    const totalSeconds = Math.floor(milliseconds / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    const ms = Math.floor((milliseconds % 1000) / 10);
+    
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}.${ms.toString().padStart(2, '0')}`;
+}
+
+// Fonctions pour le Pomodoro
+function startPomodoro() {
+    if (!pomodoroRunning) {
+        if (pomodoroTime === 0) {
+            const workTime = parseInt(document.getElementById('work-time').value) || 25;
+            pomodoroTime = workTime * 60 * 1000; // Convertir en millisecondes
+            updatePomodoroDisplay();
+        }
+        
+        pomodoroRunning = true;
+        const startTime = Date.now() - (pomodoroMode === 'work' 
+            ? (parseInt(document.getElementById('work-time').value) * 60 * 1000 - pomodoroTime) 
+            : (parseInt(document.getElementById('break-time').value) * 60 * 1000 - pomodoroTime));
+        
+        pomodoroInterval = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const totalTime = pomodoroMode === 'work' 
+                ? parseInt(document.getElementById('work-time').value) * 60 * 1000 
+                : parseInt(document.getElementById('break-time').value) * 60 * 1000;
             
-            if (!longUrl) {
-                alert('Veuillez entrer une URL');
-                return;
+            pomodoroTime = totalTime - elapsed;
+            
+            if (pomodoroTime <= 0) {
+                pomodoroTime = 0;
+                clearInterval(pomodoroInterval);
+                pomodoroRunning = false;
+                
+                // Passer au mode suivant
+                if (pomodoroMode === 'work') {
+                    pomodoroMode = 'break';
+                    document.getElementById('pomodoro-status').textContent = 'Pause terminée!';
+                    alert('Session de travail terminée! Prenez une pause.');
+                    const breakTime = parseInt(document.getElementById('break-time').value) || 5;
+                    pomodoroTime = breakTime * 60 * 1000;
+                } else {
+                    pomodoroMode = 'work';
+                    document.getElementById('pomodoro-status').textContent = 'Travail terminé!';
+                    alert('Pause terminée! Retour au travail.');
+                    const workTime = parseInt(document.getElementById('work-time').value) || 25;
+                    pomodoroTime = workTime * 60 * 1000;
+                }
+                
+                document.getElementById('start-pomodoro').classList.remove('hidden');
+                document.getElementById('pause-pomodoro').classList.add('hidden');
             }
             
-            // Validation simple
-            try {
-                new URL(longUrl);
-            } catch (_) {
-                alert('Veuillez entrer une URL valide');
+            updatePomodoroDisplay();
+        }, 1000);
+        
+        document.getElementById('start-pomodoro').classList.add('hidden');
+        document.getElementById('pause-pomodoro').classList.remove('hidden');
+        document.getElementById('pomodoro-status').textContent = pomodoroMode === 'work' ? 'En travail...' : 'En pause...';
+    }
+}
+
+function pausePomodoro() {
+    if (pomodoroRunning) {
+        pomodoroRunning = false;
+        clearInterval(pomodoroInterval);
+        
+        document.getElementById('start-pomodoro').classList.remove('hidden');
+        document.getElementById('pause-pomodoro').classList.add('hidden');
+        document.getElementById('pomodoro-status').textContent = 'En pause';
+    }
+}
+
+function resetPomodoro() {
+    pausePomodoro();
+    pomodoroMode = 'work';
+    pomodoroTime = 0;
+    updatePomodoroDisplay();
+    document.getElementById('pomodoro-status').textContent = 'Prêt à travailler';
+}
+
+function updatePomodoroDisplay() {
+    const totalSeconds = Math.floor(pomodoroTime / 1000);
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    
+    document.getElementById('pomodoro-display').textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// 🔹 Fonctions pour le timeur corrigé
+function startTimer() {
+    if (!timerRunning) {
+        if (timerTime === 0) {
+            const hours = parseInt(document.getElementById('timer-hours').value) || 0;
+            const minutes = parseInt(document.getElementById('timer-minutes').value) || 0;
+            const seconds = parseInt(document.getElementById('timer-seconds').value) || 0;
+
+            timerTime = (hours * 3600 + minutes * 60 + seconds) * 1000;
+
+            if (timerTime === 0) {
+                alert('Veuillez définir une durée pour le timeur');
                 return;
             }
-            
-            // Générer une URL courte simple (dans une vraie application, cela appellerait une API)
-            const shortCode = Math.random().toString(36).substring(2, 8);
-            const shortUrl = `https://mini.tools/${shortCode}`;
-            
-            document.getElementById('short-url').value = shortUrl;
-            document.getElementById('result-container').classList.remove('hidden');
         }
 
-        function copyShortUrl() {
-            const shortUrlField = document.getElementById('short-url');
-            shortUrlField.select();
-            document.execCommand('copy');
-            
-            // Afficher un retour
-            const button = event.target;
-            const originalText = button.textContent;
-            button.textContent = 'Copié !';
-            setTimeout(() => {
-                button.textContent = originalText;
-            }, 1000);
-        }
+        timerRunning = true;
+        timerEndTime = Date.now() + timerTime;
+
+        timerInterval = setInterval(() => {
+            timerTime = timerEndTime - Date.now();
+
+            if (timerTime <= 0) {
+                clearInterval(timerInterval);
+                timerRunning = false;
+                timerTime = 0;
+                updateTimerDisplay();
+                alert('Timeur terminé!');
+                document.getElementById('start-timer').classList.remove('hidden');
+                document.getElementById('pause-timer').classList.add('hidden');
+                return;
+            }
+
+            updateTimerDisplay();
+        }, 1000);
+
+        document.getElementById('start-timer').classList.add('hidden');
+        document.getElementById('pause-timer').classList.remove('hidden');
+    }
+}
+
+function pauseTimer() {
+    if (timerRunning) {
+        timerRunning = false;
+        clearInterval(timerInterval);
+        // on conserve le temps restant
+        timerTime = timerEndTime - Date.now();
+        
+        document.getElementById('start-timer').classList.remove('hidden');
+        document.getElementById('pause-timer').classList.add('hidden');
+    }
+}
+
+function resetTimer() {
+    pauseTimer();
+    timerTime = 0;
+    document.getElementById('timer-hours').value = '0';
+    document.getElementById('timer-minutes').value = '0';
+    document.getElementById('timer-seconds').value = '0';
+    updateTimerDisplay();
+}
+
+function updateTimerDisplay() {
+    const totalSeconds = Math.floor(timerTime / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    
+    document.getElementById('timer-display').textContent =
+        `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Fonctions pour le générateur de timestamp
+function generateTimestamp() {
+    const dateString = document.getElementById('timestamp-date').value;
+    const hours = parseInt(document.getElementById('timestamp-hours').value) || 0;
+    const minutes = parseInt(document.getElementById('timestamp-minutes').value) || 0;
+    const seconds = parseInt(document.getElementById('timestamp-seconds').value) || 0;
+    
+    const date = new Date(dateString);
+    date.setHours(hours, minutes, seconds, 0);
+    
+    const timestampSeconds = Math.floor(date.getTime() / 1000);
+    const timestampMilliseconds = date.getTime();
+    
+    document.getElementById('unix-seconds').value = timestampSeconds;
+    document.getElementById('unix-milliseconds').value = timestampMilliseconds;
+    document.getElementById('formatted-date').value = date.toLocaleString('fr-FR');
+}
     </script>
 </body>
 </html>
